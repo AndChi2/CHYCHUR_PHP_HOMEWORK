@@ -20,8 +20,17 @@
 </head>
 <body>
 <h1>Цикл for</h1>
-<table>
-    <?php // Решение ?>
+<table border="1">
+    <?php echo "<tr>";
+    for ( $i = 1; $i <= 10; $i++ ){
+        echo "<tr>";
+        for ( $j = 1; $j <= 10; $j++ ){
+            $c = ($i == 1 || $j == 1) ? 'green' : 'white';
+            $v = $i*$j;
+            echo "<td align=\"center\" valign=\"top\" bgcolor=$c>$v</td>";
+        }
+    }
+    echo "</tr>"; ?>
 </table>
 </body>
 </html>

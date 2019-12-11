@@ -18,8 +18,20 @@
 <body>
     <div>
         <?php
-            // Вывод
+
+        $n = rand(1, 100);
+        function factorial($n)
+        {
+            $result = 1;
+            for ($i = 1; $i <= $n; $i++) {
+                $result *= $i;
+            }
+            return $result;
+        }
+        echo $n ."<br>";
+        echo factorial($n);
         ?>
     </div>
 </body>
 </html>
+
